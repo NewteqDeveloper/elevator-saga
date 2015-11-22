@@ -6,9 +6,11 @@
             elevator.goToFloor(0);
             elevator.goToFloor(1);
             elevator.goToFloor(2);
+            elevator.goToFloor(3);
+            elevator.goToFloor(4);
         });
         elevator.on("stopped_at_floor", function(floor){
-            if (floor === 2){
+            if (floor === 4){
                 elevator.goToFloor(0);
             }
         });
