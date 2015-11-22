@@ -15,21 +15,21 @@ Challenge layout will be the following:
 
 ## Challenge 1
 
-* 15
-* 60
-* 3
-* 1
+* 15 people
+* 60 seconds
+* 3 floors
+* 1 elevator
 
 ## Challenge 2
 
-* 20
-* 60
-* 5
-* 1
+* 20 people
+* 60 seconds
+* 5 floors
+* 1 elevator
 
 # Challenge 3 
 
-* 23
-* 60
-* 5
-* 1
+* 23 people
+* 60 seconds
+* 5 floors
+* 1 elevator
