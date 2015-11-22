@@ -7,10 +7,29 @@ This repo contains branches for each level of the elevator saga as I go through 
 
 The subsections below contain information regarding each of the challenges
 
+Challenge layout will be the following:
+* People to transport
+* Number of seconds
+* Across how many floors
+* Number of elevators in the challenge
+
 ## Challenge 1
 
-In this challenge you are tasked with transporting 15 people in 60 seconds across 3 floors.
+* 15
+* 60
+* 3
+* 1
 
 ## Challenge 2
 
-In this challenge you are tasked with transporting 20 people in 60 seconds across 5 floors.
+* 20
+* 60
+* 5
+* 1
+
+# Challenge 3 
+
+* 23
+* 60
+* 5
+* 1
