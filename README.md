@@ -36,3 +36,9 @@ Challenge layout will be the following:
 * 60 seconds
 * 5 floors
 * 1 elevator
+
+# Challenge 4
+* 24 people
+* 60 seconds
+* 8 floors
+* 2 elevators
