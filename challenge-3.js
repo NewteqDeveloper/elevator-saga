@@ -13,14 +13,8 @@
            });
         });
         
-        elevator.on("stopped_at_floor", function(floor){
-            if (floor === 4){
-                elevator.goToFloor(0);
-            }
-        });
-        
         elevator.on("floor_button_pressed", function(floor){
-            elevator.goToFloor(floor, true);
+            elevator.goToFloor(floor);
         });
     },
     update: function(dt, elevators, floors) {
