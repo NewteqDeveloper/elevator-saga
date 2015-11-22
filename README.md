@@ -12,7 +12,7 @@ The subsections below contain information regarding each of the challenges
 
 Challenge layout will be the following:
 * People to transport
-* Number of seconds
+* Complete in under "number of seconds"
 * Across how many floors
 * Number of elevators in the challenge
 
@@ -42,3 +42,9 @@ Challenge layout will be the following:
 * 60 seconds
 * 8 floors
 * 2 elevators
+
+# Challenge 5
+* 100 people
+* 68 seconds
+* 6 floors
+* 4 elevators
