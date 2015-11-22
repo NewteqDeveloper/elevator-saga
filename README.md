@@ -12,7 +12,9 @@ The subsections below contain information regarding each of the challenges
 
 Challenge layout will be the following:
 * People to transport
-* Complete in under "number of seconds"
+* Complete in under
+* * x seconds
+* * x moves
 * Across how many floors
 * Number of elevators in the challenge
 
