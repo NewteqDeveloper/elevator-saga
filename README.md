@@ -4,7 +4,7 @@ These are my attempts at the [elevator saga game](http://play.elevatorsaga.com/)
 This repo contains branches for each level of the elevator saga as I go through the levels. Once a level has been completed the branch will be merged into master.
 
 # Using jQuery
-It is not too obvious in the description of the game, but the site uses jQuery and so the game always you to use it too.
+It is not too obvious in the description of the game, but the site uses jQuery and thereofre the game allows you to use it too.
 
 # Challenge Information
 
@@ -12,7 +12,7 @@ The subsections below contain information regarding each of the challenges
 
 Challenge layout will be the following:
 * People to transport
-* Complete in under "number of seconds"
+* Complete in /under/ "number of seconds"
 * Across how many floors
 * Number of elevators in the challenge
 
