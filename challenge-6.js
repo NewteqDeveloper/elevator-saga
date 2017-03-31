@@ -1,42 +1,29 @@
 {
     init: function(elevators, floors) {
-        $.each(elevators, function(index, elevator){
-            var goingUp = function(){
-                elevator.goingUpIndicator(true);
-                elevator.goingDownIndicator(false);
-            };
-            var goingDown = function(){
-                elevator.goingUpIndicator(false);
-                elevator.goingDownIndicator(true);  
-            };
-            var toggleIndicator = function(){
-                var up = elevator.goingUpIndicator();
-                var down = elevator.goingDownIndicator();
-                
-                elevator.goingUpIndicator(!up);
-                elevator.goingDownIndicator(!down);
-            };
-            
-            goingDown();
-            
+        var idleElevators = [];
+
+        $.each(floors, function(floorNum, floor){
+            floor.on("up_button_pressed", function(){
+                if (idleElevators.length > 0){
+                    idleElevators.pop().goToFloor(floorNum);
+                }
+            });
+
+            floor.on("down_button_pressed", function(){
+                if (idleElevators.length > 0){
+                    idleElevators.pop().goToFloor(floorNum);
+                }
+            });
+        });
+
+        $.each(elevators, function(index, elevator){            
             elevator.on("idle", function(){
-                toggleIndicator();
+                idleElevators.push(elevator);
             });
             
             elevator.on("floor_button_pressed", function(floor){
                 elevator.goToFloor(floor);
-                if (floor === 3){
-                    goingDown();
-                }
-                if (floor === 0){
-                    goingUp();
-                }
             });
-            
-            $.each(floors, function(index, floor){
-                
-            });
-            
         });
     },
     update: function(dt, elevators, floors) {
