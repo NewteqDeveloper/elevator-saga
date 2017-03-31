@@ -22,38 +22,38 @@ Challenge layout will be the following:
 ## Challenge 1
 
 * 15 people
-* 60 seconds
+* 60 *seconds*
 * 3 floors
 * 1 elevator
 
 ## Challenge 2
 
 * 20 people
-* 60 seconds
+* 60 *seconds*
 * 5 floors
 * 1 elevator
 
 # Challenge 3 
 
 * 23 people
-* 60 seconds
+* 60 *seconds*
 * 5 floors
 * 1 elevator
 
 # Challenge 4
 * 24 people
-* 60 seconds
+* 60 *seconds*
 * 8 floors
 * 2 elevators
 
 # Challenge 5
 * 100 people
-* 68 seconds
+* 68 *seconds*
 * 6 floors
 * 4 elevators
 
 #Challenge 6
 * 40 people
-* 60 moves
+* 60 *moves*
 * 4 floors
 * 2 elevators
