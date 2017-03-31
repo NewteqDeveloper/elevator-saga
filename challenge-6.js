@@ -20,6 +20,10 @@
             elevator.on("idle", function(){
                 idleElevators.push(elevator);
             });
+
+            elevator.on("passing_floor", function(floorNum, direction){
+                elevator.goToFloor(floorNum, true)
+            });
             
             elevator.on("floor_button_pressed", function(floor){
                 elevator.goToFloor(floor);
