@@ -52,7 +52,7 @@ Challenge layout will be the following:
 * 6 floors
 * 4 elevators
 
-#Challenge 6
+# Challenge 6
 * 40 people
 * 60 *moves*
 * 4 floors
