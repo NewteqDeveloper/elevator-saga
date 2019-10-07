@@ -1,20 +1,28 @@
 {
     init: function(elevators, floors) {
-        // Do stuff with the elevators and floors, which are both arrays of objects
-        var elevator = elevators[0];
-        elevator.on("idle", function() {
-            elevator.goToFloor(0);
-            elevator.goToFloor(1);
-            elevator.goToFloor(2);
-        });
-        elevator.on("stopped_at_floor", function(floor){
-            if (floor === 2){
-                elevator.goToFloor(0);
-            }
+        var elevator = elevators[0]; // Let's use the first elevator
+
+        // Whenever the elevator is idle (has no more queued destinations) ...
+        //elevator.on("idle", function() {
+            // let's go to all the floors (or did we forget one?)
+            //elevator.goToFloor(0);
+            //elevator.goToFloor(1);
+        //});
+        
+        elevator.on("floor_button_pressed", function(floorNum) {
+            elevator.goToFloor(floorNum);
+        })
+        
+        $.each(floors, function(i, floor) {
+            floor.on("up_button_pressed", function() {
+                elevator.goToFloor(floor.floorNum());
+            });
+            floor.on("down_button_pressed", function() {
+                elevator.goToFloor(floor.floorNum());
+            }); 
         });
     },
     update: function(dt, elevators, floors) {
-        // Do more stuff with the elevators and floors
-        // dt is the number of game seconds that passed since the last time update was called
+        // We normally don't need to do anything here
     }
 }
