@@ -1,13 +1,14 @@
 {
     init: function(elevators, floors) {
+        function floorPress(floor, isUp) {
+            console.log(isUp ? "Up" : "Down");
+            var floorNum = floor.floorNum();
+            if (!elevator.destinationQueue.includes(floorNum)){
+                elevator.goToFloor(floorNum);
+            }
+        }
+        
         var elevator = elevators[0]; // Let's use the first elevator
-
-        // Whenever the elevator is idle (has no more queued destinations) ...
-        //elevator.on("idle", function() {
-            // let's go to all the floors (or did we forget one?)
-            //elevator.goToFloor(0);
-            //elevator.goToFloor(1);
-        //});
         
         elevator.on("floor_button_pressed", function(floorNum) {
             if (!elevator.destinationQueue.includes(floorNum)){
@@ -17,16 +18,10 @@
         
         $.each(floors, function(i, floor) {
             floor.on("up_button_pressed", function() {
-                var floorNum = floor.floorNum();
-                if (!elevator.destinationQueue.includes(floorNum)){
-                    elevator.goToFloor(floorNum);
-                }
+                floorPress(floor, true);
             });
             floor.on("down_button_pressed", function() {
-                var floorNum = floor.floorNum();
-                if (!elevator.destinationQueue.includes(floorNum)){
-                    elevator.goToFloor(floorNum);
-                }
+                floorPress(floor, false);
             }); 
         });
     },
