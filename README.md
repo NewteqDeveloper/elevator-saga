@@ -1,3 +1,6 @@
+# Migrated
+Moved to: https://codeberg.org/newteq/elevator-saga
+
 # elevator-saga
 These are my attempts at the [elevator saga game](http://play.elevatorsaga.com/).
 
